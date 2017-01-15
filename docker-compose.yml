@@ -1,0 +1,11 @@
+---
+version:2
+service:
+  admin-ui
+    image: mongo-express
+    links:
+      - mongo
+    ports:
+      - 8081:8081
+  mongo:
+    image: mongo
