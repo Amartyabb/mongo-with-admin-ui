@@ -1,11 +1,17 @@
 ---
-version:2
-service:
-  admin-ui
+version: '2'
+services:
+  admin-ui:
+  # Use mongo-express admin ui tool
     image: mongo-express
     links:
       - mongo
     ports:
+    # map host port 8081 to container port 8081
       - 8081:8081
   mongo:
+  # Use official mongo image from docker official repo 
     image: mongo
+    volumes:
+    # map the data volume with a local directory
+      - ./dbData:/data/db
