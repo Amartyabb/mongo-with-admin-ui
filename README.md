@@ -20,6 +20,10 @@ Learn mongo and mongo-express. A project for launching docker based mongodb and 
     git clone git@github.com:ddffx/mongo-with-admin-ui.git
 
     cd mongo-with-admin-ui
+
+    create a directory *dbData*, this directory used for mapping a volume for */data/db*
+
+    mkdir dbData
   ```
 
 ## Run 
@@ -34,3 +38,8 @@ Learn mongo and mongo-express. A project for launching docker based mongodb and 
 ### Access the admin ui
 Go to http://localhost:8081 in your browser
 You can create new database, create collections, insert documents and query the collections.
+
+### Access mongo shell
+```
+  docker exec -it mongowithadminui_mongo_1 mongo
+```
