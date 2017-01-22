@@ -40,6 +40,9 @@ Go to http://localhost:8081 in your browser
 You can create new database, create collections, insert documents and query the collections.
 
 ### Access mongo shell
+ - Open a terminal (mongo and admin ui are already running)
+ - do `docker ps` to display the list of running containers for the services. Note the name of the mongo container, 
+ in this case it is **mongowithadminui_mongo_1** and then run below to launch mongo shell
 ```
   docker exec -it mongowithadminui_mongo_1 mongo
 ```
