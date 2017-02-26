@@ -32,7 +32,7 @@ Learn mongo and mongo-express. A project for launching docker based mongodb and 
 
   ## or if you would like to run the services in the background
 
-  docker compose up -d
+  docker-compose up -d
 ```
 
 ### Access the admin ui
